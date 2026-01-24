@@ -656,15 +656,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5119b6953171716438427313b3d89888, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -55.9733
+      value: -55.598
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5119b6953171716438427313b3d89888, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.412
+      value: 0.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5119b6953171716438427313b3d89888, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -54.4745
+      value: -54.507
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5119b6953171716438427313b3d89888, type: 3}
       propertyPath: m_LocalRotation.w
@@ -705,7 +705,7 @@ PrefabInstance:
     - target: {fileID: 5866666021909216657, guid: 5119b6953171716438427313b3d89888, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: b049587e6f1e2584da4929f7a326688e, type: 2}
+      objectReference: {fileID: 9100000, guid: 3368b24a78d1d60409adb374660f1251, type: 2}
     - target: {fileID: 5866666021909216657, guid: 5119b6953171716438427313b3d89888, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 0
@@ -748,6 +748,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ShipperControl
   speed: 1
   mouseSensitivity: 200
+  jumpHeight: 0.2
+  gravity: -9.81
   cam: {fileID: 330585546}
 --- !u!143 &666979568
 CharacterController:
@@ -773,7 +775,7 @@ CharacterController:
   m_StepOffset: 0.1
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.67, z: 0}
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -143211,6 +143213,7 @@ GameObject:
   - component: {fileID: 7014237319824110704}
   - component: {fileID: 4891948993318217887}
   - component: {fileID: 2425695941749632451}
+  - component: {fileID: 7014237319824110705}
   m_Layer: 0
   m_Name: Object_5402
   m_TagString: Untagged
@@ -314343,6 +314346,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 939933199953727622}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &7014237319824110705
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3148182764516457563}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -7017187344579642608, guid: f895062c89c075e4885c530d1b2f4bf5, type: 3}
 --- !u!4 &7015027771347420016
 Transform:
   m_ObjectHideFlags: 0
